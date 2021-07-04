@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--View Port-->
-    <meta name="viewport" content="width=device-width, initial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <!--CSS-->
     <link rel="stylesheet" href="/styles/global.css">
@@ -21,15 +22,15 @@
 <body>
     <div id="room" class="content">
         <header>
-            <img src="assets/logo.svg" alt="Rocket.Q Logo">
+            <img src="images/logo.svg" alt="Rocket.Q Logo">
 
             <div class="buttons">
                 <div class="button outlined">
                     #323243
-                    <img src="assets/copy.svg" alt="Copiar numero da sala">
+                    <img src="images/copy.svg" alt="Copiar numero da sala">
                 </div>
                 <a href="#" class="button">
-                    <img src="assets/users-white.svg" alt="Criar uma sala">
+                    <img src="images/users-white.svg" alt="Criar uma sala">
                     Criar sala
                 </a>
             </div>
@@ -45,7 +46,7 @@
 
                     <footer>
                         <div>
-                            <img src="assets/lock.svg" alt="">
+                            <img src="images/lock.svg" alt="">
                             Esta pergunta é anônima
                         </div>
                         <button>Enviar</button>
@@ -59,7 +60,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/user.svg" alt="">
+                                <img src="images/user.svg" alt="">
                             </div>
                             <div class="question">
                                 <p>Qual a diferença entre const, var e let no JS</p>
@@ -67,11 +68,11 @@
                         </div>
                         <div class="actions">
                             <a href="#" class="check">
-                                <img src="assets/check.svg" alt="Marcar como lida">
+                                <img src="images/check.svg" alt="Marcar como lida">
                                 Marcar como lida
                             </a>
                             <a href="#" class="delete">
-                                <img src="/assets/trash.svg" alt="Excluir">
+                                <img src="/images/trash.svg" alt="Excluir">
                                 Excluir
                             </a>
                         </div>
@@ -79,7 +80,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/user.svg" alt="">
+                                <img src="images/user.svg" alt="">
                             </div>
                             <div class="question">
                                 <p>O que é TypeScript?</p>
@@ -87,11 +88,11 @@
                         </div>
                         <div class="actions">
                             <a href="#" class="check">
-                                <img src="assets/check.svg" alt="Marcar como lida">
+                                <img src="images/check.svg" alt="Marcar como lida">
                                 Marcar como lida
                             </a>
                             <a href="#" class="delete">
-                                <img src="/assets/trash.svg" alt="Excluir">
+                                <img src="/images/trash.svg" alt="Excluir">
                                 Excluir
                             </a>
                         </div>
@@ -100,19 +101,22 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/user.svg" alt="">
+                                <img src="images/user.svg" alt="">
                             </div>
                             <div class="question">
-                                <p>Você já sabe quais as bases você precisa melhorar para alcançar o seu próximo nível com maestria? Definiu o seu foco e objetivo para seguir em frente? estou curiosa e e embasbacada com sua perseverança por ter alcançado a terceira aula e sei que vai continuar até o fim, então responde ai pra gente</p>
+                                <p>Você já sabe quais as bases você precisa melhorar para alcançar o seu próximo nível
+                                    com maestria? Definiu o seu foco e objetivo para seguir em frente? estou curiosa e e
+                                    embasbacada com sua perseverança por ter alcançado a terceira aula e sei que vai
+                                    continuar até o fim, então responde ai pra gente</p>
                             </div>
                         </div>
                         <div class="actions">
                             <a href="#" class="check">
-                                <img src="assets/check.svg" alt="Marcar como lida">
+                                <img src="images/check.svg" alt="Marcar como lida">
                                 Marcar como lida
                             </a>
                             <a href="#" class="delete">
-                                <img src="/assets/trash.svg" alt="Excluir">
+                                <img src="/images/trash.svg" alt="Excluir">
                                 Excluir
                             </a>
                         </div>
@@ -121,7 +125,7 @@
                     <div class="question-wrapper read">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/user.svg" alt="">
+                                <img src="images/user.svg" alt="">
                             </div>
                             <div class="question">
                                 <p>Qual a melhor linguagem?</p>
@@ -129,34 +133,35 @@
                         </div>
                         <div class="actions">
                             <a href="#" class="delete">
-                                <img src="/assets/trash.svg" alt="Excluir">
+                                <img src="/images/trash.svg" alt="Excluir">
                                 Excluir
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
             </section>
         </main>
     </div>
 
-    <div class="modal-wrapper active">
+    <div class="modal-wrapper">
         <div class="modal">
             <h2>Excluir pergunta</h2>
             <p>Tem certeza que você deseja excluir esta pergunta?</p>
-            
+
             <form action="#">
                 <label class="sr-only" for-id="password">Digite sua senha admin</label>
                 <input type="password" id="password" name="password" placeholder="Digite sua senha">
 
                 <div class="buttons">
-                    <div class="button gray">Cancelar</div>
+                    <div class="button gray cancel">Cancelar</div>
                     <button class="red">Sim, excluir</button>
                 </div>
             </form>
         </div>
     </div>
 
+    <script src="scripts/main.js" defer type="module"></script>
 </body>
 
 </html>
